@@ -1,7 +1,7 @@
 // React Bootstrap components
 import { Container, Row, Col, Table } from "react-bootstrap";
 // Custom components
-import { ProductListItem } from "../index";
+import { ProductItemContainer } from "../index";
 
 const ProducList = ({ prodArray }) => {
 
@@ -22,7 +22,7 @@ const ProducList = ({ prodArray }) => {
                             </tr>
                         </thead>
                         <tbody>
-                            {prodArray.map((item, i) => <ProductListItem item={item} key={i}/>)}
+                            {prodArray.map((item, i) => <ProductItemContainer item={item} key={i}/>)}
                         </tbody>
                     </Table>
                 </Col>

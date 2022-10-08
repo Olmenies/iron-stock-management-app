@@ -1,9 +1,12 @@
 // React components
-import {Container, Row, Col} from 'react-bootstrap';
+import { useEffect, useState } from 'react';
+// React Bootstrap components
+import {Container, Row, Col } from 'react-bootstrap';
 // Custom components
 import {ProductListContainer} from '../index';
 
 const HomeContainer = () => {
+
     return(
         <Container>
             <Row>

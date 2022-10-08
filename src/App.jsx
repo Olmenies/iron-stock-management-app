@@ -1,7 +1,7 @@
 // React Router Dom components
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Custom components
-import { HomeContainer } from './components/index';
+import { HomeContainer, ProductDetailContainer } from './components/index';
 // Styles
 import './App.css';
 
@@ -15,7 +15,8 @@ function App() {
       <main>
           <BrowserRouter>
             <Routes>
-              <Route path='/' element={<HomeContainer />} ></Route>
+              <Route path='/' element={<HomeContainer />} />
+              <Route path='/ProductDetail/:id' element={ <ProductDetailContainer /> } />
             </Routes>
           </BrowserRouter>
       </main>

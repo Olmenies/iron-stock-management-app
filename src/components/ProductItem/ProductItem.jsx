@@ -1,6 +1,13 @@
+// React Router Dom
+import { NavLink } from "react-router-dom";
+// React Bootstrap components
 import { Button } from "react-bootstrap";
 
-const ProductListItem = ({ item, handlerOnDetail, handlerOnIngress, handlerOnEgress}) => {
+//
+// Component start
+//
+const ProductListItem = ({ item, handlerOnDetail}) => {
+
     return (
         <tr>
             <td>{item.code}</td>
@@ -8,25 +15,14 @@ const ProductListItem = ({ item, handlerOnDetail, handlerOnIngress, handlerOnEgr
             <td>{item.stock}</td>
             <td>{item.cost}</td>
             <td>
+
+                <NavLink to={`/ProductDetail/${item.code}`} >
                 <Button
                     onClick={(e) => handlerOnDetail(e)}
                 >
                     Detalle
                 </Button>
-            </td>
-            <td>
-                <Button
-                    onClick={(e) => handlerOnIngress(e)}
-                >
-                    Ingreso
-                </Button>
-            </td>
-            <td>
-                <Button
-                    onClick={(e) => handlerOnEgress(e)}
-                >
-                    Egreso
-                </Button>
+                </NavLink>
             </td>
         </tr>
     );

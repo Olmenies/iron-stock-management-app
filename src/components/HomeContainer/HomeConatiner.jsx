@@ -1,5 +1,3 @@
-// React components
-import { useEffect, useState } from 'react';
 // React Bootstrap components
 import {Container, Row, Col } from 'react-bootstrap';
 // Custom components

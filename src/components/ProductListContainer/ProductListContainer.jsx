@@ -1,7 +1,7 @@
 // React components
 import { useEffect, useState } from "react";
 // React Bootstrap components
-import { Container, Row, Col, Modal, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 // Custom components
 import { ProductList } from "../index";
 //Mock data

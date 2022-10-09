@@ -6,7 +6,7 @@ import { Button } from "react-bootstrap";
 //
 // Component start
 //
-const ProductListItem = ({ item, handlerOnDetail}) => {
+const ProductListItem = ({ item, handlerOnDetail }) => {
 
     return (
         <tr>
@@ -17,9 +17,9 @@ const ProductListItem = ({ item, handlerOnDetail}) => {
             <td>
 
                 <NavLink to={`/ProductDetail/${item.code}`} >
-                <Button>
-                    Detalle
-                </Button>
+                    <Button>
+                        Detalle
+                    </Button>
                 </NavLink>
             </td>
         </tr>

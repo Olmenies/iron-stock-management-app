@@ -1,14 +1,12 @@
 // React Router Dom components
 import { NavLink } from "react-router-dom";
 // React Bootstrap components
-import { Button } from "react-bootstrap";
+import { Button, Modal } from "react-bootstrap";
 
 //
 // Component start
 //
-const ProductDetail = ({ selectedProduct }) => {
-
-    console.log(selectedProduct);
+const ProductDetail = ({ selectedProduct, showModal }) => {
 
     return (
         <div>
@@ -16,11 +14,16 @@ const ProductDetail = ({ selectedProduct }) => {
                 <p>{selectedProduct.code}</p>
                 <p>{selectedProduct.name}</p>
                 <p>{selectedProduct.stock}</p>
-                <p>{selectedProduct.cost}</p>
             </div>
             <div>
-                <Button>Modificar stock</Button>
-                <NavLink to="/"><Button>volver</Button></NavLink>
+                <Button
+                    onClick={() => showModal()}
+                >
+                    Modificar stock
+                </Button>
+                <NavLink to="/">
+                    <Button>Volver</Button>
+                </NavLink>
             </div>
         </div>
     );

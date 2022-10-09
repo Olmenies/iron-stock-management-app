@@ -3,18 +3,15 @@ export const PRODUCTS = [
         code:'lavandina',
         name:'Lavandina',
         stock:20,
-        cost:100,
     },
     {
         code:'escoba',
         name:'Escoba',
         stock:5,
-        cost:20,
     },
     {
         code:'cumbia',
         name:'Cumbia',
         stock:1000,
-        cost:6,
     }
 ];

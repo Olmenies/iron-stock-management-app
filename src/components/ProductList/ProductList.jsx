@@ -17,8 +17,6 @@ const ProducList = ({ prodArray }) => {
                                 <th>Stock</th>
                                 <th>Costo</th>
                                 <th>-</th>
-                                <th>-</th>
-                                <th>-</th>
                             </tr>
                         </thead>
                         <tbody>

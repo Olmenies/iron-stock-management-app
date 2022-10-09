@@ -145,7 +145,7 @@ const ProductDetailContainer = () => {
 
     return (
         <div>
-            <div>
+            <div style={{display:'flex', justifyContent:'center'}}>
                 <ProductDetail
                     selectedProduct={selectedProduct}
                     showStockModal={showStockModal}

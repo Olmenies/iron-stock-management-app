@@ -6,14 +6,9 @@ import { ProductItem } from '../index';
 //
 const ProductItemContainer = ({ item }) => {
 
-    const handlerOnDetail = (e) => {
-        console.log(e);
-    }
-
     return (
         <ProductItem
             item={item}
-            handlerOnDetail={handlerOnDetail}
         />
     );
 }

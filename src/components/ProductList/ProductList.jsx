@@ -15,6 +15,7 @@ const ProducList = ({ prodArray }) => {
                                 <th>Código</th>
                                 <th>Producto</th>
                                 <th>Stock</th>
+                                <th>Alarma</th>
                                 <th>-</th>
                             </tr>
                         </thead>

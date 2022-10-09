@@ -13,7 +13,6 @@ const ProductListItem = ({ item, handlerOnDetail }) => {
             <td>{item.code}</td>
             <td>{item.name}</td>
             <td>{item.stock}</td>
-            <td>{item.cost}</td>
             <td>
 
                 <NavLink to={`/ProductDetail/${item.code}`} >

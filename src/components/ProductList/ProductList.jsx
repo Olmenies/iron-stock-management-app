@@ -9,7 +9,7 @@ const ProducList = ({ prodArray }) => {
         <Container>
             <Row>
                 <Col>
-                    <Table striped hover>
+                    <Table striped hover className="mt-5">
                         <thead>
                             <tr>
                                 <th>Código</th>

@@ -1,4 +1,6 @@
-//React Bootstrap components
+// React Router Dom components
+import { NavLink } from "react-router-dom";
+// React Bootstrap components
 import { Button } from "react-bootstrap";
 
 //
@@ -18,6 +20,7 @@ const ProductDetail = ({ selectedProduct }) => {
             </div>
             <div>
                 <Button>Modificar stock</Button>
+                <NavLink to="/"><Button>volver</Button></NavLink>
             </div>
         </div>
     );

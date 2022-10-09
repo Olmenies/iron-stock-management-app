@@ -17,9 +17,7 @@ const ProductListItem = ({ item, handlerOnDetail}) => {
             <td>
 
                 <NavLink to={`/ProductDetail/${item.code}`} >
-                <Button
-                    onClick={(e) => handlerOnDetail(e)}
-                >
+                <Button>
                     Detalle
                 </Button>
                 </NavLink>

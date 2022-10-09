@@ -1,7 +1,7 @@
 // React Router Dom components
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 // Custom components
-import { HomeContainer, ProductDetailContainer } from './components/index';
+import { HomeContainer, ProductDetailContainer, CustomNavBar } from './components/index';
 // Styles
 import './App.css';
 
@@ -11,7 +11,9 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <header>imHeader</header>
+      <header>
+        <CustomNavBar />
+      </header>
       <main>
           <BrowserRouter>
             <Routes>

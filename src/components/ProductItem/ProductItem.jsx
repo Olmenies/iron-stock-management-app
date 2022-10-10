@@ -10,10 +10,6 @@ import {COLORS} from '../../constants/styles.js';
 //
 const ProductListItem = ({ item }) => {
 
-    if(item.stock === 0) {
-        console.log('asd');
-    }
-
     return (
         <tr style={{ backgroundColor: item.stock === 0 ? COLORS.danger : item.stock <= item.alarm && COLORS.warn }} >
             <td>{item.code}</td>

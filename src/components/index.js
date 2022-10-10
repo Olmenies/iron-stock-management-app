@@ -7,3 +7,5 @@ export {default as ProductItem} from './ProductItem/ProductItem';
 export {default as ProductItemContainer} from './ProductItemContainer/ProductItemContainer';
 export {default as ProductDetailContainer} from './ProductDetailContainer/ProcuctDetailContainer';
 export {default as ProductDetail} from './ProductDetail/ProductDetail';
+export {default as ProductModal} from './ProductModal/ProductModal';
+export {default as StockModal} from './StockModal/StockModal';
